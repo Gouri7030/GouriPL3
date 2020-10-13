@@ -1,0 +1,148 @@
+<html>
+	<header>
+		<title>GATE -2021</title>
+		<h1 align="center">GATE Online Application</h1>
+	</header>
+
+	<body bgcolor="LightCyan">
+	<form action="save_input.html" method="get" autocomplete="on">
+		<section>
+		<fieldset>
+			<legend>Student Information</legend>
+			<p>Student Name:</p>
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" placeholder="Gouri" required><br>
+			<label for="mname">Middle name:</label><br>
+			<input type="text" id="mname" name="mname" placeholder="Mahadev" required><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" placeholder="Sutar" required><br><br>
+			<p>Parent's Name:</p>
+			<label for="fname">First name:</label><br>
+			<input type="text" id="fname" name="fname" placeholder="Mahadev" required><br>
+			<label for="mname">Middle name:</label><br>
+			<input type="text" id="mname" name="mname" placeholder="Shankar" required><br>
+			<label for="lname">Last name:</label><br>
+			<input type="text" id="lname" name="lname" placeholder="Sutar" required><br><br>
+			
+			<label for="Mobileno">Mobile Number:</label><br>
+			<input type="number" id="Mobileno" name="Mobileno" placeholder="7030994287" required><br><br>
+			<label for="email">Enter your Email ID:</label><br>
+			<input type="email" id="email" name="email" placeholder="exampl@gmail.com" required><br><br>
+
+			<label for="address">Enter your address:</label><br>
+			<textarea name="address" rows="6" cols="80"></textarea><br><br>
+			<label for="ID">ID proof:</label>
+			<select name="ID" id="ID" size="2" required>
+				<option value="Adhar Card">Adhar Card</option>
+				<option value="PAN Card">PAN Card</option>
+				<option value="Voter ID">Voter ID</option>
+			</select>	
+			<br><br>
+			<label for="photo">Upload Scanned file of your ID proof.</label><br>
+			<input type="file">
+		</fieldset>
+		</section>
+		<br><br>
+
+		<section>
+		<fieldset>
+			<legend>Educational Information</legend>
+			<label for="seatno">Exam Seat Number:</label><br>
+			<input type="text" id="seatno" name="seatno" required><br><br>
+			<label for="qualification">Qualification</label>
+			<select name="qualification" id="qualification" size="3" required>
+				<option value="">None</option>
+				<option value="B. E.">B.E.</option>
+				<option value="B. Tech.">B. Tech</option>
+				<option value="Third Year of B. E.">Third Year of B. E.</option>
+				<option value="Third Year of B. Tech.">Third Year of B. Tech.</option>
+			</select>	
+			<br><br>
+			<label for="branch">Branch:</label>
+			<select name="branch" id="branch" size="4" required>
+				<option value="">None</option> 
+				<option value="Computer Engineering">Computer Engineering</option>
+				<option value="Computer Science and Engineering">Computer Science and Engineering</option>
+				<option value="Information Technology">Information Technology"</option>
+				<option value="Mechanical Engineering">Mechanical Engineering</option>
+				<option value="Civil Engineering">Civil Engineering</option>
+				<option value="Electrical Engineering">Electrical Engineering</option>
+				<option value="Electronics Engineering">Electronics Engineering</option>
+				<option value="Chemical Engineering">Chemical Engineering</option>
+				<option value="Aeronautical Engineering">Aeronautical Engineering</option>
+			</select>	
+			<br><br>
+			<label for="university">University:</label>
+			<input list="university" name="university" required>
+			<datalist id="university">
+				<option value="Savitribai Phule Pune University">
+				<option value="University of Mumbai">
+				<option value="Shivaji University, Kolhapur">
+				<option value="Rashtrasant Tukadoji Maharaj Nagpur University">
+				<option value="Swami Ramanand Teerth Marathwada University - Nanded">
+			</datalist>
+			<br><br>
+			<label for="college">College:</label>
+			<input list="college" name="college" required>
+			<datalist id="college">
+				<option value="Walchand College of Engineering, Sangli">
+				<option value="College of Engineering, Pune">
+				<option value="Veermata Jijabai Technological Institute">
+				<option value="D. Y. Patil College of Engineering & Technology, Kolhapur">
+				<option value="Kolhapur Institute of Technology">
+				<option value="Institute of Chemical Technology, Mumbai">
+				<option value="Indian Institute of Technology, Bombay">
+			</datalist>
+		</fieldset>
+		</section>
+		<br><br>
+		
+		<section>
+		<fieldset>
+			<legend>Exam Preferences</legend>
+			<label for="branch">Exam Paper Branch:</label>
+			<select required name="branch" id="branch">
+				<option value="Computer Engineering">Computer Engineering</option>
+				<option value="Computer Science and Engineering">Computer Science and Engineering</option>
+				<option value="Information Technology">Information Technology"</option>
+				<option value="Mechanical Engineering">Mechanical Engineering</option>
+				<option value="Civil Engineering">Civil Engineering</option>
+				<option value="Electrical Engineering">Electrical Engineering</option>
+				<option value="Electronics Engineering">Electronics Engineering</option>
+				<option value="Chemical Engineering">Chemical Engineering</option>
+				<option value="Aeronautical Engineering">Aeronautical Engineering</option>
+			</select>	
+			<br><br>
+			<label for="city">Select city to give Exam:</label>
+			<select required name="city" id="city">
+				<optgroup label="Maharashtra">
+						<option value="Kolhapur">Kolhapur</option>
+						<option value="Sangli">Sangli</option>
+						<option value="Pune">Pune</option>
+						<option value="Mumbai">Mumbai</option>
+				</optgroup>
+				<optgroup label="Karnataka">
+						<option value="Bengaluru">Bengaluru</option>
+						<option value="Vijayapura">Vijayapura</option>
+						<option value="Hubli">Hubli</option>
+				</optgroup>
+				<optgroup label="Uttar Pradesh">
+						<option value="Kanpur">Kanpur</option>
+						<option value="Lucknow">Lucknow</option>
+						<option value="Ayodhya">Ayodhya</option>
+				</optgroup>
+			</select>
+		</fieldset>
+		</section>
+		<br><br>
+		<input type="reset">
+		<button type="submit" form="form1" value="Submit" ondblclick="myalert()">Submit</button>
+		<script> 
+			function myalert() 
+			{ 
+				alert("Your respose is saved."); 
+			} 
+		</script> 
+	</form>
+	</body>
+</html>
