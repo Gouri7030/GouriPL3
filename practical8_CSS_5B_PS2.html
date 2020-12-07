@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Centigrade To Fahrenheit</title>
+		<style>
+		body {
+			background-color: #92A8D1;
+			
+			border-style: solid;
+			border-width: 4px;
+			border-color: rgb(180, 76,76);
+			
+			margin-top: 50px;
+			margin-bottom: 50px;
+			margin-right: 5px;
+			margin-left: 50px;
+			
+			padding-top: 80px;
+			padding-right: 80px;
+			padding-bottom: 80px;
+			padding-left: 80px;
+		}
+		
+		h1{
+			color: #FFFFFF;
+			text-align: center;
+		}
+		p {
+			font-family: verdana;
+			font-size: 20px;
+		}
+		#para1 {
+			margin-left: 200px;
+			margin-right: 200px;
+		}
+		div > p {
+			background-color: #ADFF2F;
+		}
+		/* visited link red*/
+		a:link {
+		  color: #FF0000;
+		}
+
+		/* visited link green*/
+		a:visited {
+		  color: #00FF00;
+		}
+
+		/* mouse over link hotpink*/
+		a:hover {
+		  color: #FF00FF;
+		}
+
+		/* selected link blue*/
+		a:active {
+		  color: #0000FF;
+		}
+		p.intro::first-letter {
+			color: #ff0000;
+			font-size: 200%;
+			padding-left: 100px
+		}
+		a[target="_blank"] {
+			background-color: #00BFFF;
+		}
+		</style>
+		<link rel="stylesheet" type="text/css" href="mystyle2.css">
+	</head>
+	
+	<body>
+		<header>
+			<h1>C++ Program to Perform Centigrade to Fahrenheit Conversion</h1>
+			<div>
+				<p id="para1" class="intro" style="color:#0000CD;">The program reads the temperature in Celsius, multiplies the temperature in Celsius by 9 / 5 and adds 32 to obtain temperature in Fahrenheit.</p>
+			</div>
+			<h2>Reference</h2>
+			<p>Below link give you more information about code</p>
+			<nav>
+				<a href="https://www.sanfoundry.com/cpp-program-perform-celsius-fahrenheit-conversion/" target="_blank">CLICK HERE</a>
+			</nav>
+		</header>
+<hr>	
+		<section>
+		<article>
+		<h2>Code</h2>
+		<p><small>Here is source code of the C++ program</small></p>
+		<code>
+			#include<iostream><br>
+			using namespace std;<br>
+			int main()<br>
+			{<br>
+				float <var>fahrenheit</var>, <var>celsius</var>;<br>
+				cout << "Enter the temperature in Celsius : ";<br>
+				cin >> <var>celsius</var>;<br>
+				<var>fahrenheit</var> = (<var>celsius</var> * 9.0) / 5.0 + 32;<br>
+				cout << "The temperature in Celsius    : " << <var>celsius</var> << endl;<br>
+				cout << "The temperature in Fahrenheit : " << <var>fahrenheit</var> << endl;<br>
+				return 0;<br>
+			}<br>
+		</code>
+		</article>
+		</section>
+<hr>		
+		<aside>
+		<section>
+		<p>Press <kbd>Ctrl</kbd> + <kbd>F9</kbd> to compile the code on Dev-C++.</p>
+		<p>Press <kbd>Ctrl</kbd> + <kbd>F10</kbd> to run the code on Dev-C++.</p>
+		</section>
+		</aside>
+<hr>		
+		<section>
+			<h3>Sample Intput</h3>
+			<p><samp>-40</samp></p>
+			<h3>Sample Output</h3>
+			<p><samp>Enter the temperature in Celsius : -40</samp></p>
+			<p><samp>The temperature in Celsius    : -40</samp></p>
+			<p><samp>The temperature in Fahrenheit : -40</samp></p>
+<hr>
+			<h4>Variablres in the Program:<h4>
+			<p><var>fahrenheit</var>, <var>celsius</var></p>
+			<h4>Complexity:<h4>
+			<p>Time complexity is O(n) which is less than O(n<sup>2</sup>)</p>
+		</section>
+<hr>		
+		<section>
+		<footer>
+			<h3>Contact Information</h3>
+			<p>Contact <sub>author</sub>Gouri Sutar: <a href="gouri@exampli.com">gouri@exampli.com</a></p>
+			<p>Participate in the Coding Certification contest: <a href="https://www.sanfoundry.com/contests/#">contest link</a></p>
+			<p><s>Five days to go!!!</s></p>
+			<p>One day to go!!!</p>
+		</footer>
+		</section>
+	</body>
+</html>
